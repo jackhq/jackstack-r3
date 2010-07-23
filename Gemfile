@@ -15,6 +15,8 @@ gem "steak", ">= 0.4.0.beta.1"
 gem 'capybara'
 gem 'jasmine'
 
+gem 'jammit'
+
 # Use unicorn as the web server
 # gem 'unicorn'
 

@@ -58,3 +58,9 @@
     
     # mkdir app/coffeescripts
     
+9. Jammit
+
+    # edit gem file
+    gem 'jammit'
+    
+    
