@@ -1,0 +1,14 @@
+embed_assets: on
+
+javascripts:
+  workspace:
+    - public/javascripts/**/*.js
+
+stylesheets:
+  common:
+    - public/stylesheets/reset.css
+    - public/stylesheets/*.css
+  workspace:
+    - public/stylesheets/pages/workspace.css
+  empty:
+    - public/stylesheets/pages/empty.css
