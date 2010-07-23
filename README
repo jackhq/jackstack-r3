@@ -1,0 +1,60 @@
+# Rails 3 Stack
+
+1. Install Rails
+    
+    gem install rails --pre
+    
+2. Create Project
+
+    rails new [project name]
+
+3. Add Haml/Sass
+
+    # edit GemFile
+    gem "haml"
+    
+4. Add RSpec
+    gem install rspec-rails --pre
+    
+    # edit GemFile
+    gem "rspec-rails", ">= 2.0.0.beta.18"
+    
+    rails g rspec:install
+    
+5. Add Remarkable
+
+    gem install remarkable --pre
+
+    # edit GemFile
+    gem "remarkable", ">= remarkable-4.0.0.alpha4"
+    
+6. Add JQuery
+
+    curl -L http://code.jquery.com/jquery-1.4.2.min.js > public/javascripts/jquery.js
+    curl -L http://github.com/rails/jquery-ujs/raw/master/src/rails.js > public/javascripts/rails.js
+
+
+    # config/initializers/jquery.rb
+    module ActionView::Helpers::AssetTagHelper
+      remove_const :JAVASCRIPT_DEFAULT_SOURCES
+      JAVASCRIPT_DEFAULT_SOURCES = %w(jquery.js rails.js)
+
+      reset_javascript_include_default
+    end
+    
+    
+7. Add Steak
+
+    # edit gem file
+    gem install capybara
+    gem install steak --pre
+    
+    rails g steak
+    
+8. Barista
+
+    # edit gem file
+    gem 'barista', '>= 0.5.0'
+    
+    # mkdir app/coffeescripts
+    
